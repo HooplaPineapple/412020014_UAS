@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="AJAZ AHMED"
+            android:text="Author Name"
             android:textColor="@color/dark_black"
             android:textSize="10sp" />
 
@@ -65,7 +65,7 @@
             android:layout_marginBottom="0dp"
             android:maxLines="3"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Master Your Skill With Fun And Learn Very Fundamentals..."
+            android:text="News Desc"
             android:textColor="@color/dark_black"
             android:textSize="12sp" />
 
@@ -76,7 +76,7 @@
             android:layout_marginTop="7dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="162 Shared"
+            android:text="Catgeory"
             android:textColor="@color/black"
             android:textSize="12sp" />
 

@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.Publish">
+    android:background="@drawable/bg"
+    tools:context="com.abhyblog.blogapp.Fragments.Publish">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Fragments.Publish">
+        tools:context="com.abhyblog.blogapp.Fragments.Publish">
 
         <TextView
             android:id="@+id/textView3"
@@ -20,7 +21,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Publish Blog"
+            android:text="Publish News"
             android:textColor="@color/black"
             android:textSize="27sp" />
 
@@ -71,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Select an Image!!"
+                    android:text="Insert Image"
                     android:textColor="@color/black"
                     android:textSize="21sp" />
             </androidx.cardview.widget.CardView>
@@ -81,10 +82,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:background="@drawable/light_bg"
+                android:background="@drawable/bg_input"
                 android:ems="10"
                 android:fontFamily="@font/poppins"
                 android:hint="Title"
+                android:textStyle="bold"
                 android:inputType="textPersonName"
                 android:padding="15dp"
                 android:textColor="@color/black" />
@@ -96,8 +98,9 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/light_bg"
+                android:background="@drawable/bg_input"
                 android:ems="10"
+                android:textStyle="bold"
                 android:fontFamily="@font/poppins"
                 android:gravity="start"
                 android:hint="Description"
@@ -113,10 +116,11 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/light_bg"
+                android:background="@drawable/bg_input"
                 android:ems="10"
                 android:fontFamily="@font/poppins"
                 android:hint="Author Name"
+                android:textStyle="bold"
                 android:inputType="textPersonName"
                 android:padding="15dp"
                 android:textColor="@color/black" />
@@ -129,7 +133,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/light_bg"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="#367085"
                 android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
                 android:text="PUBLISH"

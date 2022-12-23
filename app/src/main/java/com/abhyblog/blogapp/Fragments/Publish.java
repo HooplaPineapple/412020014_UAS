@@ -1,4 +1,4 @@
-package com.programiner.blogapp.Fragments;
+package com.abhyblog.blogapp.Fragments;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -7,7 +7,6 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.audiofx.Equalizer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -35,7 +34,7 @@ import com.karumi.dexter.listener.DexterError;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.PermissionRequestErrorListener;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
-import com.programiner.blogapp.databinding.FragmentPublishBinding;
+import com.abhyblog.blogapp.databinding.FragmentPublishBinding;
 
 import java.util.Date;
 import java.util.HashMap;

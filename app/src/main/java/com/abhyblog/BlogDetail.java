@@ -1,20 +1,19 @@
-package com.programiner;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
+package com.abhyblog;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.abhyblog.blogapp.databinding.ActivityBlogDetailBinding;
 import com.bumptech.glide.Glide;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.programiner.blogapp.R;
-import com.programiner.blogapp.databinding.ActivityBlogDetailBinding;
 
 import java.util.HashMap;
 

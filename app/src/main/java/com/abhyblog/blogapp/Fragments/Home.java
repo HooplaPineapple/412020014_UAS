@@ -1,6 +1,9 @@
-package com.programiner.blogapp.Fragments;
+package com.abhyblog.blogapp.Fragments;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,19 +11,14 @@ import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
+import com.abhyblog.blogapp.Adapter;
+import com.abhyblog.blogapp.Model;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.google.firebase.firestore.QuerySnapshot;
-import com.programiner.blogapp.Adapter;
-import com.programiner.blogapp.Model;
-import com.programiner.blogapp.R;
-import com.programiner.blogapp.databinding.FragmentHomeBinding;
+import com.abhyblog.blogapp.databinding.FragmentHomeBinding;
 
 import java.util.ArrayList;
 
