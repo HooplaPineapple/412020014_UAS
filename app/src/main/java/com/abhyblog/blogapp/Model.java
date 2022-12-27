@@ -1,4 +1,4 @@
-package com.programiner.blogapp;
+package com.abhyblog.blogapp;
 
 public class Model {
     String tittle, desc, author, date, img, share_count,id,timestamp;

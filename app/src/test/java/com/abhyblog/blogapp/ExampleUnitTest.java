@@ -1,4 +1,4 @@
-package com.programiner.blogapp;
+package com.abhyblog.blogapp;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.programiner.blogapp;
+package com.abhyblog.blogapp;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -15,11 +15,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.abhyblog.BlogDetail;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.programiner.BlogDetail;
 
 import java.util.ArrayList;
 import java.util.HashMap;

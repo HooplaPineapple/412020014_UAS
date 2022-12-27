@@ -2,9 +2,10 @@
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.programiner.BlogDetail">
+    tools:context="com.abhyblog.BlogDetail">
 
     <RelativeLayout
     android:layout_width="match_parent"
@@ -49,15 +50,18 @@
         android:clickable="true"
         app:srcCompat="@drawable/ic_share_icon" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_medium"
-        android:textSize="15sp"
-        android:layout_below="@+id/card"
-        android:text="by Programiner" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="by Author Name"
+            android:textSize="15sp" />
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
@@ -68,7 +72,7 @@
         android:fontFamily="@font/poppins_semibold"
         android:textSize="23sp"
         android:layout_below="@+id/textView4"
-        android:text="This is the sample tittle for the demo" />
+        android:text="Title" />
 
     <TextView
         android:id="@+id/textView6"
@@ -78,7 +82,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="this blog post is created in android blog app created in 3 vidos of 1 series and you can find all the videos in the playlist section of our channel"
+        android:text="Description"
         android:textColor="@color/dark_black"
         android:textSize="18sp" />
 </RelativeLayout>

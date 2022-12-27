@@ -9,10 +9,14 @@
         <item
             android:icon="@drawable/publish"
             android:id="@+id/nav_publish"
-            android:title="Publish Blog" />
+            android:title="Publish News" />
+        <item
+            android:icon="@drawable/ic_dev"
+            android:id="@+id/dev_profile"
+            android:title="About Developer" />
         <item
             android:icon="@drawable/profile"
-            android:id="@+id/nav_profile"
-            android:title="Profile" />
+            android:id="@+id/Uprofile"
+            android:title="User Profile" />
     </group>
 </menu>

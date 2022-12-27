@@ -1,4 +1,4 @@
-package com.programiner.blogapp;
+package com.abhyblog.blogapp;
 
 import android.os.Bundle;
 import android.view.Gravity;
@@ -10,14 +10,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.abhyblog.blogapp.Fragments.DevProfile;
+import com.abhyblog.blogapp.Fragments.Home;
+import com.abhyblog.blogapp.Fragments.Publish;
+import com.abhyblog.blogapp.Fragments.UProfile;
+import com.abhyblog.blogapp.databinding.ActivityDrawerBinding;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.navigation.NavigationView;
-import com.programiner.blogapp.Fragments.Home;
-import com.programiner.blogapp.Fragments.Profile;
-import com.programiner.blogapp.Fragments.Publish;
-import com.programiner.blogapp.databinding.ActivityDrawerBinding;
 
 public class DrawerActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -30,7 +31,6 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         binding = ActivityDrawerBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        showdp();
         setupdrawer();
 
     }
@@ -51,10 +51,6 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
 
     }
 
-    private void showdp() {
-        account = GoogleSignIn.getLastSignedInAccount(this);
-        Glide.with(this).load(account.getPhotoUrl()).into(binding.profileIcon);
-    }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -69,10 +65,15 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 fragmentTransaction1.replace(R.id.frame_layout, new Publish());
                 fragmentTransaction1.commit();
                 break;
-            case R.id.nav_profile:
+            case R.id.dev_profile:
                 FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction2.replace(R.id.frame_layout, new Profile());
+                fragmentTransaction2.replace(R.id.frame_layout, new DevProfile());
                 fragmentTransaction2.commit();
+                break;
+            case R.id.Uprofile:
+                FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction3.replace(R.id.frame_layout, new UProfile());
+                fragmentTransaction3.commit();
                 break;
 
         }
