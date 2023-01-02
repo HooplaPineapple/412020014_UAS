@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "581959944880",
-    "project_id": "abhyblog",
-    "storage_bucket": "abhyblog.appspot.com"
+    "project_number": "361765915050",
+    "firebase_url": "https://uas-d7890-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "uas-d7890",
+    "storage_bucket": "uas-d7890.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:581959944880:android:3230b78f1bce8c08494975",
+        "mobilesdk_app_id": "1:361765915050:android:5231bc9d2d1cda47dd83d3",
         "android_client_info": {
-          "package_name": "com.abhyblog.blogapp"
+          "package_name": "com.newsapp.abhygunawan"
         }
       },
       "oauth_client": [
         {
-          "client_id": "581959944880-0bhognvcpt1f5k40fl3fbtafgmigv6ru.apps.googleusercontent.com",
+          "client_id": "361765915050-ou1qsilrk1iicpbon6o93t6ik8vs10f9.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4rRtvNDLqq_ykDOXZMaKUfYyFgnW1uuw"
+          "current_key": "AIzaSyD2zHNmAbTcx1NVY_uKl-p_pSqM9eb1OLk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "581959944880-0bhognvcpt1f5k40fl3fbtafgmigv6ru.apps.googleusercontent.com",
+              "client_id": "361765915050-ou1qsilrk1iicpbon6o93t6ik8vs10f9.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
