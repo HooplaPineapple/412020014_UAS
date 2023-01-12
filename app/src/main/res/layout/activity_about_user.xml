@@ -8,28 +8,16 @@
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="245dp">
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:backgroundTint="@color/black"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginBottom="15dp"
-            app:srcCompat="@drawable/ic_backicon" />
+        android:layout_height="265dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <LinearLayout
             android:background="@drawable/gradientbackground"
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:orientation="vertical">
-            <ImageView
-                android:layout_marginTop="45dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/news"/>
+
             <TextView
                 android:id="@+id/greeting"
                 android:layout_marginTop="10dp"
@@ -42,6 +30,7 @@
         </LinearLayout>
 
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="360dp"
         android:layout_height="wrap_content"
@@ -52,6 +41,8 @@
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
@@ -82,6 +73,8 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
@@ -113,12 +106,14 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/telp"/>
+                android:src="@drawable/ic_baseline_perm_identity_24"/>
             <TextView
                 android:id="@+id/ageTitle"
                 android:textStyle="bold"
@@ -142,6 +137,8 @@
         <!--        end user email add layout disini-->
     </LinearLayout>
 
+
+    </RelativeLayout>
     <Button
         android:id="@+id/logOut"
         android:textColor="#fff"
@@ -151,5 +148,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log Out"/>
+
 
 </LinearLayout>

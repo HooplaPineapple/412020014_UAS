@@ -19,6 +19,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
     <TextView
         android:id="@+id/bannerdesc"
         android:layout_width="wrap_content"
@@ -30,6 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/banner"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="370dp"
@@ -70,6 +73,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pwd"/>
+
     <TextView
         android:id="@+id/fgt_pwd"
         android:layout_width="wrap_content"
@@ -80,11 +84,11 @@
         app:layout_constraintTop_toBottomOf="@id/signIn"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"/>
+        android:layout_marginLeft="37dp"/>
+
     <TextView
         android:id="@+id/register"
         android:layout_width="wrap_content"
-
         android:layout_height="wrap_content"
         android:text="Create New Account"
         android:textSize="16sp"
@@ -92,17 +96,17 @@
         app:layout_constraintTop_toBottomOf="@id/signIn"
         app:layout_constraintLeft_toRightOf="@id/fgt_pwd"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="90dp"/>
-<ProgressBar
-    android:id="@+id/pbar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="80dp"
-    android:visibility="visible"
-    tools:ignore="MissingConstraints"
-    app:layout_constraintTop_toBottomOf="@id/signIn"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"/>
+        android:layout_marginLeft="50dp"/>
+    <ProgressBar
+        android:id="@+id/pbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/signIn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
 

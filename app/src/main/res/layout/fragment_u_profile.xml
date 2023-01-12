@@ -12,7 +12,7 @@
         <LinearLayout
             android:background="@drawable/gradientbackground"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="250dp"
             android:orientation="vertical">
             <ImageView
                 android:layout_marginTop="45dp"
@@ -20,32 +20,23 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/news"/>
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="News App"
-                android:textColor="#fff"
-                android:textStyle="bold"
-                android:textSize="21sp"/>
             <Button
                 android:id="@+id/btnNU"
-                android:layout_marginTop="65dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Check User Profile -->" />
         </LinearLayout>
 
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_marginTop="45dp">
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </LinearLayout>

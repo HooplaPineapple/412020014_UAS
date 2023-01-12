@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/bg"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
     <TextView
         android:id="@+id/banner"
@@ -39,7 +45,6 @@
         android:textSize="24sp"
         android:layout_marginTop="60dp"
         android:hint="Full Name"
-        android:layout_marginLeft="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bannerdesc" />
@@ -51,7 +56,6 @@
         android:inputType="number"
         android:textSize="24sp"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp"
         android:hint="Age"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -64,7 +68,6 @@
         android:inputType="textEmailAddress"
         android:textSize="24sp"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="40dp"
         android:hint="Email"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -78,7 +81,6 @@
         android:textSize="24sp"
         android:layout_marginTop="15dp"
         android:hint="Password"
-        android:layout_marginLeft="40dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email" />
@@ -105,7 +107,8 @@
         app:layout_constraintTop_toBottomOf="@id/registerUser"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

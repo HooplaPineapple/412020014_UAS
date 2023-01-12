@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif"
+            android:text="News App"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/bannerdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed By Abhy Gunawan"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@+id/banner"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="24sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Email"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bannerdesc" />
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:hint="Password"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email" />
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="370dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="#ffffff"
+            android:text="Login"
+            android:layout_marginLeft="20dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pwd"/>
+
+        <TextView
+            android:id="@+id/fgt_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="192dp"
+            android:layout_marginTop="20dp"
+            android:text="Forget Password?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signIn" />
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/signIn"
+            app:layout_constraintLeft_toRightOf="@id/fgt_pwd"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"/>
+        <ProgressBar
+            android:id="@+id/pbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@id/signIn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
